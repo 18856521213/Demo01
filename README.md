@@ -2,20 +2,36 @@
 
 > A Vue.js project
 
-## Build Setup
+模板
+<template>
+    <div>
 
-``` bash
-# install dependencies
-npm install
+    </div>
+</template>
 
-# serve with hot reload at localhost:8080
-npm run dev
+<script>
+export default {
+    
+}
+</script>
 
-# build for production with minification
-npm run build
+<style lang="less" scoped>
+    
+</style>
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+1.前期的准备工作
+webpack打包一个模板，准备好开发前的结构
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+2.开始准备开始写代码吧
+
+https://www.cnblogs.com/cxscode/p/8325064.html 全程教学git的，好好学习
+
+3.安装element-ui 来做全局的组件
+
+
+
+
+
+
+
+

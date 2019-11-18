@@ -10,16 +10,33 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+
+      '/api' : {
+        target : 'http://39.97.33.178',
+        secure:true,//如果是https接口需要配置这个接口
+        changeOrigin : true,
+        pathRewrite:{  // 路径重写，
+
+                    '^/api': '/'  // 这里的value要设置为空否则返回404
+                    
+                },
+        header:{
+            referer:"http://39.97.33.178"
+        }
+    }
+
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
-    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
-    autoOpenBrowser: false,
+    port: 8088, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    autoOpenBrowser: true,
     errorOverlay: true,
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
+    
     
     /**
      * Source Maps
